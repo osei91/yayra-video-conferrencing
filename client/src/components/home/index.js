@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { v1 as uuid } from "uuid";
 import io from "socket.io-client";
-const socket = io.connect(process.env.REACT_APP_API_URL);
+const socket = io.connect("https://yayra-video-conferrencing.herokuapp.com");
 
 class Home extends Component {
   constructor() {

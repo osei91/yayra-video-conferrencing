@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import "./video.css";
 import CallControls from "./call-controls";
 import { Copy, MenuIcon } from "../svg/";
-const socket = io.connect(process.env.REACT_APP_API_URL);
+const socket = io.connect("https://yayra-video-conferrencing.herokuapp.com");
 
 class VideoCall extends Component {
   constructor(props) {
