@@ -1,0 +1,194 @@
+.container {
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    box-sizing:border-box;
+    display:fixed;
+}
+.meetnHeader{
+    position: relative;
+    min-width:300px;
+    margin:5px 10px;
+    box-sizing: border-box;
+    z-index: 3;
+    background:rgba(54, 54, 54, 0.747);
+    border-radius: 5px;
+    border:1px solid  rgb(58, 60, 61);
+    
+    
+}
+.meetnHeader dl{
+    margin:10px;
+    padding:0;
+    cursor:pointer;
+}
+.invlk8{
+    display:flex;
+    justify-content: space-between;
+}
+.invlk8 button{
+    background-color:inherit;
+    border:0;
+    cursor: pointer;
+    color:#fff;
+}
+.meetnHeader dd{
+   border-bottom:1px solid rgb(58, 60, 61);
+    margin-left:0;
+    padding:10px;
+    
+}
+.meetingActionsBox{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:5;
+
+}
+.btnCtrlmenu{
+    float:right;
+    height: 30px;
+    min-width:50px;
+    font-size:.7em;
+    color:#fff;
+    border:0;
+    cursor: pointer;
+    background-color:inherit;
+
+}
+.btnCtrlmenu:focus{
+    outline:none;
+}
+.myVideoContainer{
+    position:absolute;
+    height:200px;
+    width: 200px;
+    top:0;
+    right:0;
+    padding:10px;
+}
+.myVideoContainer video {
+  width: 200px;
+  height: 200px;
+  object-fit:cover;
+  border:1px solid rgb(29, 28, 28);
+}
+
+/* video call controls */
+.ctrlsWrapper{
+    position:absolute;
+    width:100%;
+    height:50px;
+    bottom:0px;
+}
+.listForbtns{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:50px;
+    padding:0;
+    margin:0;
+    background-color: rgba(31, 32, 32, 0.781);
+    padding:10px 0;
+}
+.ctrlBtn{
+    border:0;
+    margin:5px;
+    cursor:pointer;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.ctrlBtn:focus{
+    outline:none;
+}
+.endCallBtn{
+    background-color:red;
+   
+}
+.vidtoggleBtn{
+   
+    background-color:dodgerblue;
+}
+.toggleVid::before{
+    content:"";
+    width:45px;
+    margin-left:-25px;
+    margin-bottom:-12px;
+    margin-top:12px;
+    border-top:2px solid #fff;
+    position:absolute;
+
+    transform: rotate(-45deg);
+
+}
+/* video views count per display*/
+.peersVideo{
+    object-fit:cover;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100%;
+  flex-wrap: wrap;
+}
+.peer-1{
+    width:100%;
+    height:100%
+}
+.peer-2{
+    width:calc(100vw / 2);
+    height:50%;
+}
+.peer-3{
+    width:calc(100vw / 3);
+    height:100%;
+}
+.peer-4{
+    width:calc(100% / 2);
+    height:50vh;
+}
+.peer-5{
+    min-width:calc(100% / 4);
+    min-height:calc(100% / 3 - 2px);
+}
+.test_i{
+    height:100vh;
+    width:100vw;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+.dist{
+    background:orangered;
+    border:1px solid #000; box-sizing: border-box;
+}
+.alertHolder{
+    min-height:20px;
+    position: fixed;
+    bottom:10px;
+    min-width:150px;
+   
+}
+#canAlert{
+    font-weight:400;
+    font-size:1.6em;
+    cursor:pointer;
+}
+.alert{
+    min-height:20px;
+    border-radius:5px;
+    border:1px solid  rgb(58, 60, 61);
+    min-width:150px;
+    padding:10px;
+    background: rgba(10, 85, 10, 0.719);
+    color:#fff;
+    display:flex;
+    cursor:pointer;
+}
